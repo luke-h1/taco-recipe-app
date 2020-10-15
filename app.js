@@ -28,11 +28,9 @@ async function showTacos() {
     <h1 class="name">${data.name}</h1>
     <p class="recipe">${data.recipe}</p>
     <div class="url-container">
-      <a href="#">${data.url}</a>
+      <a href="${data.url}" target="_blank">Link to markdown recipe</a>
     </div>
   </div>
-    
-    
     `;
     hideLoading();
     outputEl.innerHTML = output;

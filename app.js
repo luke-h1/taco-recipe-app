@@ -1,4 +1,4 @@
-const API_URL = `http://taco-randomizer.herokuapp.com/random/?full-taco=true`;
+const API_URL = `https://cors-anywhere.herokuapp.com/http://taco-randomizer.herokuapp.com/random/?full-taco=true`;
 const outputEl = document.getElementById("container");
 const loadingEl = document.querySelector('.loader');
 

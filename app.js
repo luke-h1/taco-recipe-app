@@ -1,15 +1,14 @@
 const API_URL = `https://cors-anywhere.herokuapp.com/http://taco-randomizer.herokuapp.com/random/?full-taco=true`;
 const outputEl = document.getElementById("container");
-const loadingEl = document.querySelector('.loader');
+const loadingEl = document.querySelector(".loader");
 
-function showLoading(){
-  loadingEl.style.display = 'block';
+function showLoading() {
+  loadingEl.style.display = "block";
 }
 
-function hideLoading(){
-  loadingEl.style.display = 'none';
+function hideLoading() {
+  loadingEl.style.display = "none";
 }
-
 
 async function fetchTacoData() {
   const res = await fetch(`${API_URL}`);
@@ -38,8 +37,6 @@ async function showTacos() {
     hideLoading();
     outputEl.innerHTML = output;
   }
-
-
 }
 
 // EVENT LISTENERS
